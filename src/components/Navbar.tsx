@@ -1,9 +1,9 @@
 import { Image } from "@chakra-ui/react";
 
-import logo from "../assets/TORlogo.jpeg";
+import newlogo from "../assets/newlogo.webp";
 
 const Navbar = () => {
-  return <Image src={logo} w={"20%"} h={"auto"} objectFit={"contain"} />;
+  return <Image src={newlogo} w={"20%"} h={"auto"} objectFit={"contain"} />;
 };
 
 export default Navbar;

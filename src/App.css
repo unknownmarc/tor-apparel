@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+.grid {
+    background-image:
+        linear-gradient(to right, gray 1px, transparent 1px),
+        linear-gradient(to bottom, gray 1px, transparent 1px);
+}

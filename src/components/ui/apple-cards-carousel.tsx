@@ -13,7 +13,6 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "../../assets/util/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { ImageProps } from "../../types";
 
 import { useOutsideClick } from "../../hooks/use-outside-click";
 
@@ -260,7 +259,7 @@ export const Card = ({
         <BlurImage
           src={card.src}
           alt={card.title}
-          //fill
+          fill
           className="object-cover absolute z-10 inset-0"
         />
       </motion.button>
