@@ -1,24 +1,22 @@
 import "./App.css";
 import { Button, Grid, GridItem, Show } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
+import { AppleCardsCarouselDemo } from "./components/ui/Cardcarousel";
 
 function App() {
   return (
     <Grid
       templateAreas={{
         base: `"nav""main"`,
-        lg: `"nav nav" "aside main"`,
+        lg: `"nav" " main"`,
       }}
     >
-      <GridItem area="nav" bg={"coral"}>
-        Nav
+      <GridItem area="nav" justifyContent={"left"}>
+        <Navbar></Navbar>
       </GridItem>
-      <Show above="lg">
-        <GridItem area="aside" bg={"gold"}>
-          Aside
-        </GridItem>
-      </Show>
-      <GridItem area="main" bg={"coral"}>
-        Main
+
+      <GridItem area="main">
+        <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
       </GridItem>
     </Grid>
   );
