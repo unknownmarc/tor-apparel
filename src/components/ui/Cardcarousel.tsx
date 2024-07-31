@@ -7,14 +7,14 @@ import shoes from "../../assets/shoesverti.jpg";
 import earrings from "../../assets/earringsverti.jpg";
 import bag from "../../assets/handbagvertii.jpg";
 import { Carousel, Card } from "../ui/apple-cards-carousel";
-import { Image } from "@chakra-ui/react";
+import { Button, Image } from "@chakra-ui/react";
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    <div className="w-full h-full py-20">
+    <div className="w-full h-80% py-10">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         To a Greener Planet
       </h2>
@@ -57,9 +57,10 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
+    category: "Starting from $10.99",
+    title: "TOR Jordans",
     src: shoes,
+
     // src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },

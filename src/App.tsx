@@ -1,5 +1,5 @@
 import "./App.css";
-import { Button, Flex, Grid, GridItem, Show } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, GridItem, Show } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { AppleCardsCarouselDemo } from "./components/ui/Cardcarousel";
 
@@ -7,6 +7,7 @@ import { SpotlightPreview } from "./components/spotlighttext/Spotlightcomponent"
 import { TracingBeamDemo } from "./components/tracing beam/tracingbeamcomponent";
 import { GlobeDemo } from "./components/globe/globeElement";
 import { SignupFormDemo } from "./components/form/FormElement";
+import { VortexDemoSecond } from "./components/vortexbackgrund/vortexComponent";
 
 function App() {
   return (
@@ -18,15 +19,15 @@ function App() {
     >
       {" "}
       <GridItem area="nav" justifyContent={"left"}>
-        <Flex justify={"center"}>
-          <Navbar></Navbar>
-        </Flex>
+        <Box h={"50px"}></Box>
+        <VortexDemoSecond></VortexDemoSecond>
       </GridItem>
       <GridItem area="main">
-        <SpotlightPreview></SpotlightPreview>
         <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
 
         <GlobeDemo></GlobeDemo>
+        <Box h={"50px"}></Box>
+        <SignupFormDemo></SignupFormDemo>
       </GridItem>
     </Grid>
   );

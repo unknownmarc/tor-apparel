@@ -15,6 +15,7 @@ import { cn } from "../../assets/util/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { useOutsideClick } from "../../hooks/use-outside-click";
+import { Button } from "@chakra-ui/react";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -127,7 +128,10 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                 key={"card" + index}
                 className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
               >
-                {item}
+                {item}{" "}
+                <div className="mt-4 flex justify-center">
+                  <Button>Buy Now</Button>
+                </div>
               </motion.div>
             ))}
           </div>
