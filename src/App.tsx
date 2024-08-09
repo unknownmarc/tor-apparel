@@ -8,6 +8,7 @@ import { TracingBeamDemo } from "./components/tracing beam/tracingbeamcomponent"
 import { GlobeDemo } from "./components/globe/globeElement";
 import { SignupFormDemo } from "./components/form/FormElement";
 import { VortexDemoSecond } from "./components/vortexbackgrund/vortexComponent";
+import Boxes from "./components/Boxes";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       </GridItem>
       <GridItem area="main">
         <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
+        <Boxes></Boxes>
 
         <GlobeDemo></GlobeDemo>
         <Box h={"50px"}></Box>
